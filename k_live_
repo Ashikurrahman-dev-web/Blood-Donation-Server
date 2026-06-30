@@ -1,0 +1,26 @@
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m200[m[36m:[m  const stripeNew: Stripe.Stripe = new Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m201[m[36m:[m  const stripeCalled: Stripe.Stripe = Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m227[m[36m:[mconst stripeClient = Stripe("[1;31msk_test_[m...");
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m230[m[36m:[mconst stripeClient = new Stripe("[1;31msk_test_[m...");
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m243[m[36m:[m  stripe.customers.retrieve('cus_123', '[1;31msk_test_[m123')
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m244[m[36m:[m  stripe.customers.create({name: 'david', host: 'example.com'}, '[1;31msk_test_[m123')
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m245[m[36m:[m  stripe.customers.create({apiKey: '[1;31msk_test_[m123'})
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m257[m[36m:[m  const stripe = new Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m267[m[36m:[m  const stripe = new Stripe('[1;31msk_test_[m...', {host: 'example.com'});
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m2134[m[36m:[m     - const stripe = require('stripe')('[1;31msk_test_[m...');
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m2135[m[36m:[m     + const stripe = require('stripe')('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/CHANGELOG.md[m[36m:[m[32m2351[m[36m:[m  const stripe = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m44[m[36m:[mconst stripeClient = new Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/README.md[m[36m:[m[32m57[m[36m:[mconst stripeClient = Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/README.md[m[36m:[m[32m109[m[36m:[mconst stripeClient = new Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/README.md[m[36m:[m[32m224[m[36m:[mconst stripe = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m253[m[36m:[mconst stripeClient = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m296[m[36m:[m  const stripe = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m307[m[36m:[mconst stripeClient = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m313[m[36m:[mconst stripeClient = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m347[m[36m:[mconst stripeClient = Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/README.md[m[36m:[m[32m463[m[36m:[mconst stripeClient = Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m551[m[36m:[mconst stripeClient = new Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m581[m[36m:[mconst stripeClient = new Stripe('[1;31msk_test_[m...', {
+[35mnode_modules/stripe/README.md[m[36m:[m[32m604[m[36m:[mconst stripe = new Stripe('[1;31msk_test_[m...');
+[35mnode_modules/stripe/README.md[m[36m:[m[32m619[m[36m:[mconst stripeClient = new Stripe('[1;31msk_test_[m...');
