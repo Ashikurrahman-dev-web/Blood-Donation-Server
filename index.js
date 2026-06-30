@@ -599,6 +599,9 @@ app.get("/api/search-donors", async (req, res) => {
   }
 }
 run().catch(console.dir);
+app.get("/", (req, res) => {
+  res.send("Server Running");
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
