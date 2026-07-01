@@ -495,7 +495,7 @@ app.get("/api/public-donation-requests", async (req, res) => {
     });
   }
 });
-app.patch("/api/donation-request/donate/:id", async (req, res) => {
+app.patch("/api/donation-request/donate/:id",verifyToken, async (req, res) => {
   try {
     const { donorName, donorEmail } = req.body;
 
