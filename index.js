@@ -451,14 +451,14 @@ app.get("/api/user/:email",verifyToken, async (req, res) => {
 // Update Profile
 app.patch("/api/user/:email", verifyToken, async (req, res) => {
   try {
-    const email = req.params.email;
+    console.log("PATCH HIT");
+    console.log(req.params.email);
+    console.log(req.body);
 
     const result = await usersCollection.updateOne(
-      { email },
+      { email: req.params.email },
       {
         $set: {
-          name: req.body.name,
-          image: req.body.image,
           district: req.body.district,
           upazila: req.body.upazila,
           bloodGroup: req.body.bloodGroup,
@@ -466,11 +466,16 @@ app.patch("/api/user/:email", verifyToken, async (req, res) => {
       }
     );
 
-    res.send({
-      success: result.modifiedCount > 0,
+    console.log(result);
+
+    return res.status(200).json({
+      success: true,
+      modifiedCount: result.modifiedCount,
     });
   } catch (error) {
-    res.status(500).send({
+    console.log(error);
+
+    return res.status(500).json({
       success: false,
       message: error.message,
     });
