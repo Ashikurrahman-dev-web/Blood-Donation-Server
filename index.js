@@ -449,11 +449,10 @@ app.get("/api/user/:email",verifyToken, async (req, res) => {
 });
 
 // Update Profile
-app.patch("/api/user/:email",verifyToken, async (req, res) => {
+app.patch("/api/user/:email", verifyToken, async (req, res) => {
   try {
     const email = req.params.email;
-console.log("EMAIL:", email);
-    console.log("BODY:", req.body);
+
     const result = await usersCollection.updateOne(
       { email },
       {
@@ -466,10 +465,9 @@ console.log("EMAIL:", email);
         },
       }
     );
- console.log("RESULT:", result);
+
     res.send({
-      success: true,
-      result,
+      success: result.modifiedCount > 0,
     });
   } catch (error) {
     res.status(500).send({
